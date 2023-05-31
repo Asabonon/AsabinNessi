@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, 
+body {
+    font: 400 16px 'Montserrat', sans-serif;
+    color: #000000;
+}
+
+header {
+    background: linear-gradient(180deg, rgba(55, 236, 186, 0.15) 0%, rgba(114, 175, 211, 0.15) 100%), #FFFFFF;
+    box-shadow: 0rem .25rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    max-width: 81rem;
+    margin: 0 auto;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: #000000;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: 81rem;
+    grid-template-rows: 5.374rem, 4rem;
+    grid-template-areas:
+    "navigation__interactive"
+    "navigation__menu";
+    justify-items: stretch;
+    align-items:center;
+    justify-content: space-between;
+    align-content: space-evenly;
+    column-gap: 1.156rem;
+    padding-top: 1.032rem;
+}
+
+.navigation__interactive{
+    grid-area: navigation__interactive;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.navigation__logo {
+    padding-left: 1.032rem;
+    width: 16.503rem;
+    height: 5.374rem;
+    margin-right: 2.028rem;
+}
+
+.navigation__interactive__element {
+    position: relative;
+    font: 500 1.25rem "Montserrat", serif;
+    align-self: center;
+}
+
+
+
+.navigation__login {
+    width: 12.25rem;
+    height: 2.5rem;
+    text-align: center;
+}
+
+.navigation__login-icon {
+    transform: translateY(20%);
+}
+
+.navigation__basket {
+    width: 12.25rem;
+    height: 2.5rem;
+}
+
+
+.navigation__login a, .navigation__basket a{
+    display: block;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Выпадающее окно с городами (позже ссылки пустые) */
+
+.choose__city {
+    position: relative;
+    width: 9.781rem;
+    height: 1.5rem;
+    white-space: nowrap;
+    margin-right: 2.031rem;
+}
+
+.city {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height:1.5rem;
+    text-align: center;
+}
+
+.choose__city span {
+    padding-left: .875rem;
+}
+
+.navigation__GPSPic {
+    margin: 0;
+    height:1.5rem;
+    width:1.5rem;
+    transform: translateY(20%);
+}
+
+.navigation__DropPownPic{
+    width: 0.813rem;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 12.5rem;
+    z-index: 1;
+    padding: .75rem 1rem;
+    box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2);
+}
+
+.dropdown-content p {
+    padding:0.313rem 0;
+}
+
+.dropdown-content p:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.choose__city:hover .dropdown-content {
+    display: block;
+    background-color: #ffffff;
+}
+
+
+/* Поле поиска */
+
+form {
+    position: relative;
+}
+
+.navigation__search, button {
+    border: none;
+    outline: none;
+    border-radius: .938rem;
+}
+
+.navigation__search {
+    
+    width: 19.125rem;
+    height: 2rem;
+    background: #ffffff;
+    padding-left: .938rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+button {
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    
+    top: .25rem;
+    right: .5rem;
+    cursor: pointer;
+    background: #ffffff;
+}
+
+button:before {
+content: "";
+}
+
+.navigation__menu {
+
+    margin-top: 1.156rem;
+    grid-area: navigation__menu;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    gap: 1.5rem;
+  }
+
+.navigation__element{
+    line-height: 3.125rem;
+    font: 400 1.5rem "Montserrat", serif;
+    width: 12.25rem;
+    height: 4rem;
+    white-space: nowrap;
+    display: flex;
+    align-items:center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.navigation__BurgerPic {
+    margin-right: 2.063rem;
+}
+
+
+.navigation__contacts {
+    font-weight: 600;
+}
+
+
+main  {
+    background: linear-gradient(180deg, rgba(55, 236, 186, 0.1) 0%, rgba(114, 175, 211, 0.1) 100%);
+    padding-bottom: 7.188rem;
+}
+
+.normal-font-weight {
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.bread__crumbs {
+    padding-top: 1.563rem;
+    padding-left:.5rem;
+}
+
+.bread__crumbs span{
+    margin-right: 1rem;
+}
+
+
+
+
+
+  .cards__all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    align-content: end;
+    padding: 3.125rem 13.75rem 5.625rem 13.75rem;
+    align-items: flex-end;
+
+  }
+
+  .cards__one {
+    width: 12.25rem;
+  }
+
+  .cards__top__email{
+    padding-top: 0.625rem;
+  }
+
+  .cards__message {
+    padding-top: 1.375rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .cards__phone a,
+  .cards__review a,
+  .cards__email a {
+    color: #00B6B6;
+  }
+  .cards__phone,
+  .cards__review,
+  .cards__time{
+    padding-top: 0.625rem;
+  }
+
+  .cards__text {
+    padding-top: 1.875rem;
+  }
+  .crew__profession {
+    font-size: 0.91666666rem;
+  }
+
+  .location h1{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1.875rem;
+  }
+
+  .location__map {
+    margin-bottom: 4.375rem;
+  }
+
+  .info {
+    padding-left: 13.75rem;
+    margin-bottom: 4.375rem;
+    line-height:1.25rem;
+
+  }
+
+  .info__weight {
+    font-weight: 600;
+  }
+
+
+
+  .subscribe {
+    padding-left: 13.75rem;
+  }
+  .subscribe__card {
+    width: 53.5rem;
+    height: 18.625rem;
+    background-color: #FFFFFF;
+    box-shadow: .25rem .5rem .5rem rgba(0, 0, 0, 0.15);
+    border-radius: 2rem;
+
+    padding: 2.438rem 0 2.375rem 2.438rem; 
+  }
+
+
+  .subscribe__header{
+    display: flex;
+    height: 3.25rem;
+    font-weight: 600;
+    font-size:1.5rem;
+    line-height: 1.813rem;
+
+  }
+
+
+  .subscribe__email {
+    
+    width: 35.921rem;
+    height: 2.25rem;
+
+    border: 0;
+    border-bottom: 0.063rem solid #000000;
+    margin-bottom: 1rem;
+
+    font-size: 1rem;
+    font-weight: 600;
+    line-height:1.25rem;
+    color: #AAAAAA;
+  }
+
+
+  .subscribe__choose{
+    margin-bottom: 1rem;
+    width: 16.813rem;
+    text-align:left;
+  }
+
+
+label {
+    position: relative;
+    padding-left:1.875rem; 
+    cursor: pointer;
+  }
+.label__checkbox{
+    margin-bottom: 6.25rem;
+}
+  
+  label input[type=checkbox] {
+    position: absolute;
+    width:0; 
+    height:0;
+  }
+
+  /* Новый чекбокс */
+  label span {
+    position: absolute;
+    top:0;
+    left:0;
+    width:1.5rem; 
+    height:1.5rem;
+    background-color: #ffffff;
+    transition: .3s background-color; 
+    border: 0.125rem solid black;
+    border-radius:0.313rem;
+  }
+  
+  label span:after {
+    content: "";
+    position: absolute;
+    display: none;
+    
+    /* иконка */
+    left:.5rem;
+    top:0.313rem;
+    width:.25rem;
+    height: 0.625rem;
+    border: solid white;
+    border-width: 0 0.188rem 0.188rem 0;
+    transform: rotate(45deg);
+  }
+  label:hover span {
+    background-color: #ccc;
+  }
+  
+  label input:checked ~ span {
+    background-color: #00B6B6;
+  }
+  label input:checked ~ span:after {
+    display:block;
+  }
+
+  .subscribe__submit{
+    width: 13rem;
+    height: 2.813rem;
+    background: #00B6B6;
+    border-radius:0.313rem;
+
+    border-width: 0;
+    font-weight: 600;
+    font-size:1.5rem;
+    line-height: 1.813rem;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+
+
+
+footer {
+    height: 16.813rem;
+    filter: drop-shadow(0 .25rem .25rem rgba(0, 0, 0, 0.25));
+    background: #313830;
+    
+}
+
+footer .content{
+    display: flex;
+    flex-wrap: nowrap;
+    color: #FFFFFF; 
+    
+}
+
+footer a {
+    color: #FFFFFF; 
+    width: 14rem;
+    height: 1rem;
+    font: 0.813rem 500 "Montserrat", serif;
+}
+
+.footer__images {
+    width: 17.125rem;
+    margin-left:1.25rem;
+    margin-top: 2rem;
+}
+
+.footer__logo{
+    display: flex;
+    width: 16.503rem;
+    height: 5.374rem;
+    margin-bottom: 1.501rem;
+}
+
+.app-banner {
+    height: 5.688rem;
+    width: 17.125rem;
+}
+
+.app-banner__header{
+    display: flex;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height:1.25rem;
+    white-space: nowrap;
+    margin-bottom:0.938rem;
+    padding-top: 0.438rem;
+    padding-left:.5rem;
+}
+
+.app-banner__download{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left:.5rem;
+}
+
+.footer__googleplay {
+    
+    margin-right:1.5rem;
+}
+
+
+
+.footer__links{
+    display: flex;
+    width: 62.688rem;
+    height: 10.688rem;
+    padding-left: 9.125rem;
+    padding-top: 2rem;
+}
+
+.footer__community,
+.footer__legals,
+.footer__support,
+.footer__about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 12.25rem;
+    height: 10.688rem;
+    margin-right:1.5rem;
+    padding-left: 1rem;
+    padding-top:.5rem;
+}
+
+.footer__links .links__header {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height:1.25rem;
+    margin-bottom:0.938rem;
+}
+
+.footer__links a>span{
+    display: flex;
+    width: 14rem;
+    height: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.813rem;
+    line-height: 1rem;
+}
+
+.links__one{
+    display: block;
+    margin-bottom:.5rem;
+
+}
+
+
+
+.footer__socials{
+    width: 5rem;
+    height: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 2rem);
+    grid-template-rows: repeat(2, 2rem);
+    grid-template-areas:
+    "vk yt"
+    "tg ydz";
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.footer__vk{
+    grid-area: vk;
+}
+
+.footer__yt{
+    grid-area: yt;
+}
+
+.footer__tg{
+    grid-area: tg;
+}
+
+.footer__ydz{
+    grid-area: ydz;
+}
+
+
