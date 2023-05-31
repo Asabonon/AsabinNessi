@@ -1,1 +1,230 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="navigation">
+                <!-- Изменить ссылку -->
+                
+
+                <div class="navigation__interactive">
+
+                    <a class="navigation__logo" href="#">
+                        <img  src="./pictures/Nessy-logo-header.png" alt="logo">
+                    </a>
+
+                    <div class="navigation__interactive__element">
+                        <div class="choose__city">
+                            <img src="./pictures/gps-icon.svg" alt="iconPlace" class="navigation__GPSPic">
+                            <span class="city">г. Москва</span>
+                            <img src="./pictures/down-arrow.svg" alt="svgDNtWorks" class="navigation__DropPownPic">
+                            <div class="dropdown-content">
+                                <p>г. Санкт-Петербург</p>
+                                <p>г. Екатеринбург</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navigation__interactive__element">
+                        <form action="" method="get">
+                            <input class="navigation__search" placeholder="Поиск по сайту" type="text">
+                            <button type="submit">
+                                <img src="./pictures/Vector.svg" alt="svgDNtWorks">
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="navigation__interactive__element navigation__login">
+                        <a href="#">
+                            <img src="./pictures/login-icon.png" alt="" class="navigation__login-icon">
+                            <span>Войти</span>
+                        </a>  
+                    </div>
+                    <div class="navigation__interactive__element navigation__basket">
+                        <a href="#">
+                            <img src="./pictures/basket-icon.png" alt="">
+                            <span>Корзина</span>
+                        </a>
+                    </div>
+                    
+                </div>   
+                
+                <div class="navigation__menu">
+                    <a class="navigation__element" href="#">
+                        <img src="./pictures/burger-icon.png" alt="" class="navigation__BurgerPic">
+                        Каталог
+                    </a>
+                    <a class="navigation__element" href="#">Товары</a>
+                    <a class="navigation__element" href="#">Полезные статьи</a>
+                    <a class="navigation__element navigation__contacts" href="#">Контакты</a>
+                </div>
+                    
+                
+            </div>
+                
+
+
+
+                
+
+
+            
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="bread__crumbs">
+                <span class="normal-font-weight">Главная</span>
+                <span class="normal-font-weight">/</span>
+                <span>Контакты</span>
+            </div>
+
+            <article class="cards">
+                <div class="cards__all">
+                    <div class="cards__one">
+                        <img src="./pictures/iguana-with-phone.png" alt="iguana-with-phone" class="cards__image">
+                        <div class="cards__message">Позвоните нам</div>
+                        <div class="cards__text">Хотите задать вопрос и быстро получить ответ?</div>
+                        <div class="cards__phone">
+                            <a href="#">+7(495) 201-32-44</a>
+                        </div>
+                        <div class="cards__time">Отвечаем: 8:00-22:00</div>
+                    </div>
+                    <div class="cards__one">
+                        <img src="./pictures/typical-adviser.png" alt="typical-adviser" class="cards__image">
+                        <div class="cards__message">Оставьте отзыв</div>
+                        <div class="cards__text">Поделитесь мнением о качестве товаров и сервиса!</div>
+                        <div class="cards__review">
+                            <a href="#">Оставить отзыв</a>
+                        </div>
+                    </div>
+                    <div class="cards__one">
+                        <img src="./pictures/at-frog.png" alt="at-frog" class="cards__image">
+                        <div class="cards__message">Напишите нам</div>
+                        <div class="cards__text">Идеи? Предложения? Мы открыты для любых вопросов!</div>
+                        <div class="cards__top__email">Написать на</div>
+                        <div class="cards__email">
+                            <a href="#">nessy@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="location">
+                <h1>Расположение компании на карте</h1>
+                <img src="./pictures/location-on-map.png" alt="" class ="location__map">
+            </article>
+
+            <article class="info">
+                <div class="info__text">
+                    Название компании: ООО "Несси"<br>
+                    ИНН / КПП 7719447440 / 771901001<br>
+                    ОГРН 1167746498776<br>
+                    <span class="info__weight">Фактический адрес:</span> 119571, г. Москва, проспект Вернадского, 86А, второй этаж<br>
+                    <span class="info__weight">м. Юго-Западная</span>
+                </div>
+            </article>
+
+            <article class="subscribe">
+                <form action="sendToServer" method="get">
+                    <div class="subscribe__card">
+                        <span class="subscribe__header">Хотите оставаться в курсе событий и акций? </span> 
+                        <input class="subscribe__email" name="email" id="email" placeholder="Введите ваш E-mail"> <br>
+
+                        <div class="subscribe__choose">
+                            <label class="label__checkbox" for="articles">Уведомлять о новых статьях
+                                <input class="subscribe__checkbox" type="checkbox" name="articles" id="articles" />
+                                <span></span>
+                            </label> 
+                            <br>
+                            <br>
+                            <label class="label__checkbox" for="sales">Уведомлять об акциях
+                                <input class="subscribe__checkbox" type="checkbox" name="sales" id="sales" />
+                                <span></span>
+                            </label> <br>
+                        </div>
+                        <input class="subscribe__submit" type="submit" value="Подписаться">
+                    </div>
+                </form>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="content">
+            <div class="footer__images">
+                <a class="footer__logo" href="#">
+                    <img  src="./pictures/Nessy-logo-header.png" alt="logo">
+                </a>
+                <div class="app-banner">
+                    <span class="app-banner__header">Наше приложение доступно в </span>
+                    <div class="app-banner__download">
+                        <a class="footer__googleplay" href="#">
+                            <img  src="./pictures/googleplay.png" alt="logo">
+                        </a>
+                        <a class="footer__appstore" href="#">
+                            <img  src="./pictures/appstore.png" alt="logo">
+                        </a>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="footer__links">
+
+                <div class="footer__community">
+                    <span class="links__header">Сообщество</span>
+                    <div class="footer__socials">
+                        <a class="footer__vk" href="#">
+                            <img src="./pictures/sn-vk.png" alt="">
+                        </a>
+                        <a class="footer__yt" href="#">
+                            <img src="./pictures/sn-yt.png" alt="">
+                        </a>
+                        <a class="footer__tg" href="#">
+                            <img src="./pictures/sn-tg.png" alt="">
+                        </a>
+                        <a class="footer__ydz" href="#">
+                            <img src="./pictures/sn-ydz.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__legals">
+                    <span class="links__header">Юр. информация</span>
+                    <a class="links__one" href="#"><span >Приватность</span></a>
+                    <a class="links__one" href="#"><span >Правила</span></a>
+                    <a class="links__one" href="#"><span >Патенты</span></a>
+                </div>
+
+                <div class="footer__support">
+                    <span class="links__header">Поддержка</span>
+                    <a class="links__one" href="#"><span>Контакты</span></a>
+                    <a class="links__one" href="#"><span>Возвраты</span></a>
+                    <a class="links__one" href="#"><span>Гарантии</span></a>
+                    <a class="links__one" href="#"><span>Помощь</span></a>
+                </div>
+
+                <div class="footer__about">
+                    <span class="links__header">О нас</span>
+                    <a class="links__one" href="#"><span>История компании</span></a>
+                    <a class="links__one" href="#"><span>Карьера</span></a>
+                    <a class="links__one" href="#"><span>Корпоративные скидки</span></a>
+                    <a class="links__one" href="#"><span>Закупки</span></a>
+                    <a class="links__one" href="#"><span>Партнёры</span></a>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+</body>
+</html>
